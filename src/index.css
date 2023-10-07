@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: auto;
+  scroll-behavior: smooth;
+  background: black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.background-hero {
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-container {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Show the menu when it's opened */
+.menu-container.active {
+  transform: translateY(0);
+}
